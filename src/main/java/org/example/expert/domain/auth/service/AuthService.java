@@ -35,7 +35,7 @@ public class AuthService {
         }
 
         // 통과 된 경우에만 암호화 작업 수행
-        String encodedPasword = passwordEncoder.encode(signupRequest.getPassword());
+        String encodedPassword = passwordEncoder.encode(signupRequest.getPassword());
 
         User newUser = new User(
                 signupRequest.getEmail(),
