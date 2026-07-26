@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/nbcam
+    username: root
+    password: Thghfgl12@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+        #default_batch_fetch_size: 100 # batch size 100 -> 기존에 하나씩 조회하던 것을  100개씩 조회 하도록 수정
+    defer-datasource-initialization: true
+
+jwt:
+  secret:
+    key: rkskekfkakqktkdkwkckzkxkvkgkrkskekfkakqktkdkwkckzkxkvkgkrkskekfkakqktkdkwkckzkxkvkgk
